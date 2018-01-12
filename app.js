@@ -19,7 +19,8 @@ var commentRoutes = require('./routes/comments'),
 
 // APP CONFIG
 
-mongoose.connect('mongodb://localhost/yelpcamp')
+// mongoose.connect('mongodb://localhost/yelpcamp')
+monogoose.connect(process.env.DATABASEURL)
 
 app.use(flash())
 
